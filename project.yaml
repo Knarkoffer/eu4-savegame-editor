@@ -1,0 +1,26 @@
+id: 366
+title: Europa Universalis IV Savegame Editor Script
+status: active
+type: utility
+primary_language: python
+languages:
+  - python
+tags:
+  - editor
+  - euiv
+  - europa
+  - savegame
+  - script
+  - universalis
+libraries:
+  python:
+    - argparse
+    - glob
+    - hashlib
+    - os
+    - socket
+    - sys
+    - winreg
+github:
+  owner: Knarkoffer
+  repo: euiv-savegame-editor-script
