@@ -217,5 +217,8 @@ __marimo__/
 # Streamlit
 .streamlit/secrets.toml
 
-# EUIV savegames used to test functionality
+# EU4 savegames used to test functionality
 save games/
+
+# Local compatibility audit evidence, including private save copies and paths
+.compatibility-audit/

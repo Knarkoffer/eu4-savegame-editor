@@ -1,0 +1,2 @@
+# Preserve characterization saves exactly, including cp1252 bytes and newlines.
+tests/fixtures/*.eu4 binary
