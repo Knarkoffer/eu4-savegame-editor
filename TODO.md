@@ -1,8 +1,8 @@
 # Compatibility testing
 
 The compatibility audit resumed and was completed on 2026-09-14. There are no
-outstanding items from the paused test plan. Results and limitations are in
-[`COMPATIBILITY_TEST_REPORT.md`](COMPATIBILITY_TEST_REPORT.md).
+outstanding items from the paused test plan. Detailed evidence remains in the
+Git-ignored `.compatibility-audit/2026-09-13/` directory.
 
 ## Completed coverage
 
@@ -15,15 +15,14 @@ outstanding items from the paused test plan. Results and limitations are in
 - [x] Verify source and all 21 input checksums after the audit.
 - [x] Run permanent tests with native Windows Python using the cp1252 locale.
 - [x] Run final Black, Ruff, unit-test, and Git diff checks.
-- [x] Record aggregate results, known CLI exit-code differences, and privacy
-  scan scope.
+- [x] Preserve repaired edge cases as permanent characterization tests.
 
 ## After future transformation changes
 
 - [ ] Rerun `python -m unittest discover -s tests -v` on Windows.
 - [ ] Create a new ignored evidence directory and run
   `tests/compatibility_audit.py --phase suite` against the original source.
-- [ ] Compare raw output bytes and SHA-256 checksums, verify inputs remained
-  unchanged, and update the compatibility report.
+- [ ] Compare raw output bytes and SHA-256 checksums and verify inputs remained
+  unchanged.
 - [ ] Scan both the nonignored working tree and all Git objects reachable from
   local refs for private names before committing.
